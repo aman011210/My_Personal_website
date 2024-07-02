@@ -1,4 +1,13 @@
+/**
+* Template Name: Personal - v4.9.1
+* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -31,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #3588;
+  color: #35e88;
   text-decoration: none;
 }
 
@@ -504,9 +513,8 @@ section .container {
 }
 
 
-
-
-/* # Resume */
+/*--------------------------------------------------------------
+# Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
@@ -565,6 +573,8 @@ section .container {
   background: #18d26e;
   border: 2px solid #18d26e;
 }
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -963,20 +973,35 @@ section .container {
     transform: rotate(360deg);
   }
 }
-p {
-  text-align: left;}
 
-
-.loading {
-  display: none; /* Hide by default */
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+.credits {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: right;
+  font-size: 13px;
+  color: #fff;
+  z-index: 999999;
 }
 
-.error-message {
-  color: red;
-  display: none; /* Hide by default */
+@media (max-width: 992px) {
+  .credits {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
 }
 
-.sent-message {
-  color: green;
-  display: none; /* Hide by default */
+.credits a {
+  color: #18d26e;
+  transition: 0.3s;
+}
+
+.credits a:hover {
+  color: #fff;
 }
